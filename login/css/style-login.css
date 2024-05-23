@@ -103,8 +103,12 @@ label{
 }
 .span-required{
     display: none;
-    margin:3px 0 0 1px;
-    color: #000000; 
+    margin:1px 0 0 1px;
+    color: hsl(12, 92%, 44%); 
+    font-size: 14px;
+    position: absolute;    
+    top: 40px;
+    left: 62px;
 
 }
 .button{
@@ -198,11 +202,10 @@ input:not(:placeholder-shown) + label{
     width: 290px;
     color:  #464545; /*#e90505;*/   
     font-weight: 800;        
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
 input:not(:placeholder-shown){
-    color: #000000;/* #0183d9; */
+    color: #464545;/* #0183d9; */
     font-weight: 700;        
     font-size:14.29px; 
     left:10px; 

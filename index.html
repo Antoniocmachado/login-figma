@@ -8,20 +8,20 @@
 </head>
 <body>
     <div class="container"> 
-        <form action=""method="post" id="form__login ">                 
+        <form action=""method="post" id="form__login">                 
             <header class="header"> 
                 <img src="/login/images/logo-text.svg"  class="logo" alt="logo do sistema de triagens nas cores azul, branco e cinza">               
             </header> 
             <!-- <div class="input__container"> -->
                 <div class="input__fields">
-                    <input type="email" name="email"  id="email" placeholder="Digite seu email" class="inputs required" oninput="emailValidade" />
+                    <input type="email" name="email"  id="email" placeholder="Digite seu email" class="inputs required" oninput="emailValidate()" />
                     <label for="email"  name="email">Email</label>
                     <span class="span-required">Digite um e-mail válido</span>
                 </div>
                 <div class="input__fields">
-                    <input type="password" name="password"  id="password" placeholder="Digite sua senha" class="inputs required" oninput="mainPasswordValidade" />
+                    <input type="password" name="password"  id="password" placeholder="Digite sua senha" class="inputs required" oninput="mainPasswordValidate()" />
                     <label for="password"  name="password">Senha</label> 
-                    <span class="span-required">Senha deve conter no mínimo 8 caracteres</span>
+                    <span class="span-required">Senha:mínimo 8 caracteres</span>
                 </div>
                 <div class="button">
                     <input type="submit" class="submit" id="button_login" value="Entrar"/>

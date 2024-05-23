@@ -1,51 +1,54 @@
 const form = document.getElementById('form__login');
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required'); 
-const emailRegex = /^\w\+(\[-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const emailRegex = /\S+@\S+\.\S+/;
+                  
+// /^\w\+(\[-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
+ 
+// configurar bortão para não enviar nada vazio
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    //console.log('vazio');
-   
-    emailValidade();
-    mainPasswordValidade();
+    // console.log('vazio');   
+    emailValidate();
+    mainPasswordValidate();
     // nameValidate();
 });
 // função para setar o error:
 function setError(index){
-    campos[index].style.border = '2px solid #e63636';
+    campos[index].style.border = '2px solid #0183D9';
     spans[index].style.display = 'block';
 }
 
 // função para limpar o error:
 function removeError(index){
     campos[index].style.border = '';
-    spans[index].style.display = '';
+    spans[index].style.display = '';   
 }
 
-function emailValidade(){
+function emailValidate(){
     if(!emailRegex.test(campos[0].value))
     {
         setError(0);	
-        //console.log('validado');
-     }
+        // console.log('invalido');
+     }  
      else
     {
-      removeError(0); 	
-       //console.log('NÃO VALIDADO');
+        removeError(0); 	
+    //    console.log('VALIDO');
      }	
 }
-function mainPasswordValidade(){
+function mainPasswordValidate(){
     if(campos[1].value.length < 8)
     {
         setError(1);	
-         //console.log('validado');
+        // console.log('Invalidado');
      }
      else
     {
         removeError(1); 	
-        //console.log('NÃO VALIDADO');
-         comparePassword();
+        // console.log('VALIDO');
+        //  comparePassword();
      }	
 }
 
@@ -62,5 +65,5 @@ function mainPasswordValidade(){
 //     }    
 // }
 
-// configurar bortão para não enviar nada vazio
+
 
