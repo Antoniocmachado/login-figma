@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;500;600;700;800;900&display=swap');
+ *{
+    margin:0;
+    border: 0; 
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+a{
+    text-decoration: none;
+    transition: ease-in-out 0.20s;
+}
+body{
+    background:#0183D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    min-width: 100vw;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.header{ 
+    height: 83.26px;
+    width: 100%;
+    margin-bottom: 58.82px;     
+}
+.logo{
+    width: 182.75px;
+    height: 83.26px;
+    margin:27px 75.25px 58.82px 50px;
+        
+}
+.container{ 
+    /* background-color: #fff;  */
+    max-width: 350px; 
+    min-height: 40vh;
+    padding: 1rem;   
+    box-shadow: 5px 5px grba(0,0,0,0.2);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */ 
+    height:480px;
+    background-color: #EAEAEA; 
+    /* width: 350px; */
+    border-radius: 20px;
+    /*margin: 0 10px;     */
+    /* background: rgba(255, 255, 255, .1); */
+   /* border: 2px solid rgba(255, 255, 255, .2);
+   /*box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    /* backdrop-filter: blur(50px);  */    
+} 
+.input__fields{
+    position: relative;
+    display: flex;
+    direction: column;
+    justify-content: center;
+    align-items: center;     
+}
+
+/*input{       
+    width: 290px;
+    height: 40px;    
+    /* font-weight: 500;
+    font-size: 14.29px;
+    color: #000000;
+    border-radius: 20px;
+    outline: none; 
+    border: none;
+    transition: 5s ease-in-out; 
+    margin-bottom:30.49px;
+} */
+.input__fields input{ 
+    width: 91.2%;
+    height:2.5rem;
+    border-radius: 1.25rem; /*20px*/
+    margin-bottom: 1.9rem;/*30.49px*/
+    outline: none; 
+    margin-left: 10px; 
+    left: 15px;
+    padding: 0 0 0 24px;
+    
+   /*font-size: 0.89rem;/*14.29px*/
+   /* outline: none;
+    font: 0.9rem;
+    color: #000000;
+    height: 2.5rem; /*40px*/    
+}
+label{
+    position: absolute;
+    width: 290px;
+    height: 40px;    
+    left: 40px;
+    color:#000000;
+    font-weight: 500;    
+    transform: translateY(-5px);
+    transition: 0.2 ease-in-out; 
+    font-size: 14.29px; 
+    outline: none;     
+}
+.span-required{
+    display: none;
+    margin:3px 0 0 1px;
+    color: #000000; 
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+form input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 91.2%;
+    height:2.5rem;
+    margin-top:32.94px ;
+   /* margin-top:1.39rem; 32.49px;*/
+    /* margin: 63.43px 15px 0 15px; */
+    padding: 0.4rem;    
+    border-radius: 20px;
+    background-color:#0183D9;
+    font-weight: 600;    
+    color:#FFFFFF;   
+    cursor: pointer;
+    transition: ease-in-out 0.20s; 
+}
+form input[type="submit"]:hover{
+    letter-spacing: 0.03rem;
+    background-color:rgba(1, 131, 217, 0.8);    
+    color: #EAEAEA;
+}
+.forget__password a{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.9rem;
+    font-size: 0.75rem;
+    color:#000000;
+    font-weight: 500;
+} 
+a:hover{
+    color: #0183D9;
+    letter-spacing: 0.03rem;
+} 
+
+/* .input__container{
+    background: #98d901;      
+} */
+
+
+/* .input__container{
+    display: grid;
+    position:column;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* input{     
+    width: 290px;
+    height: 40px;    
+    font-weight: 500;
+    font-size: 14.29px;
+    color: #000000;
+    border-radius: 20px;
+    outline: none; 
+    border: none;
+    transition: 5s ease-in-out; 
+    margin-bottom:30.49px;       
+} */
+/* label{
+    position: absolute;
+    width: 290px;
+    height: 40px;    
+    left: 15px;
+    color:#000000;
+    font-weight: 500;
+    font-style: normal;
+    transform: translateY(10px);
+    /* font-size: 14.29px;  
+    transform: translateY(18px);
+    transition: 0.25 ease-in-out;  
+}*/
+input:focus + label{ 
+    transform: translateY(-35px) scale(0.8);
+    left: 14px;
+    /*width: 290px;*/
+    color:#464545;
+    font-weight: 800;        
+    font-size:16px; 
+    transition: 0.7s ease-in-out;    
+}
+input:not(:placeholder-shown) + label{    
+    transform: translateY(-35px) scale(0.8);
+    left: 14px;
+    width: 290px;
+    color:  #464545; /*#e90505;*/   
+    font-weight: 800;        
+    font-size: 16px;
+    
+}
+input:not(:placeholder-shown){
+    color: #000000;/* #0183d9; */
+    font-weight: 700;        
+    font-size:14.29px; 
+    left:10px; 
+    padding:0 0 0 25px ;  
+} 
+input::placeholder{
+    color: transparent;
+} 
+/* .button input{
+    width: 290px;
+    height: 40px;
+    border-radius: 20px;
+    background:  rgba(1, 131, 217, 1);
+    font-weight: 600;
+    font-style: normal;
+    color:#FFFFFF;   
+    cursor: pointer;
+    transition: ease-in-out 0.20s;    
+} */
+/* .button input:hover{
+    background-color:rgba(1, 131, 217, 0.85);    
+    color: #EAEAEA;
+} */
+/* .forget__password a{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 31px;
+    font-size: 12px;
+    color:#000000;
+    font-weight: 500;
+} */
+/* a:hover{
+    color: #0183D9;
+} */ 
+
+@media(max-width:1220px){
+    container{
+       /* width: 360px;  */
+       margin: 0 10px 0 10px;   
+    } 
+    form{
+        width: 350px; 
+        margin: 0 5px 0 5px; 
+    }
+}   
+  @media(min-width:325px){
+        .container{          
+           padding: 0 10px 0 10px;                  
+        }
+        form{
+            width: 300px; 
+            padding: 0 10px 0 10px; 
+        }  
+}
+ @media(min-width:300px){
+    .container{          
+       padding: 0 10px 0 10px;             
+    }
+    form{
+        width: 300px; 
+        padding: 0 10px 0 10px; 
+    }  
+}
+/* @media(min-width:250px){
+    .container{          
+       padding: 0 10px 0 10px;             
+    }
+    form{
+        width: 290px; 
+        padding: 0 10px 0 10px; 
+    }  
+} */
