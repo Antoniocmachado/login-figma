@@ -28,8 +28,7 @@ body{
 .logo{
     width: 182.75px;
     height: 83.26px;
-    margin:27px 75.25px 58.82px 50px;
-        
+    margin:27px 75.25px 58.82px 50px;        
 }
 .container{ 
     /* background-color: #fff;  */
@@ -38,7 +37,6 @@ body{
     padding: 1rem;   
     box-shadow: 5px 5px grba(0,0,0,0.2);
 }
-
 form{
     display: flex;
     flex-direction: column;
@@ -109,7 +107,6 @@ label{
     position: absolute;    
     top: 40px;
     left: 62px;
-
 }
 .button{
     display: flex;

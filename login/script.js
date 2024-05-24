@@ -14,18 +14,18 @@ form.addEventListener('submit', (event) => {
     mainPasswordValidate();
     // nameValidate();
 });
+
 // função para setar o error:
 function setError(index){
-    campos[index].style.border = '2px solid #0183D9';
+    campos[index].style.border = '0.2px solid #e90505';
     spans[index].style.display = 'block';
 }
 
 // função para limpar o error:
 function removeError(index){
-    campos[index].style.border = '';
+    campos[index].style.border = '0.2px solid #0183d9';;
     spans[index].style.display = '';   
 }
-
 function emailValidate(){
     if(!emailRegex.test(campos[0].value))
     {
@@ -51,7 +51,6 @@ function mainPasswordValidate(){
         //  comparePassword();
      }	
 }
-
 // function nameValidate(){
 //    if (campo[0].value.length < 3)
 //    {
